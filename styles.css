@@ -1,0 +1,134 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("images/bg-pattern-desktop.svg") 50% no-repeat;
+}
+
+h1 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 5rem;
+  line-height: 4.5rem;
+  letter-spacing: 0.5rem;
+}
+
+.logo-desktop {
+  margin-bottom: 20%;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+.content {
+  padding: 5% 10%;
+  margin-bottom: 5%;
+}
+
+.content p {
+  color: hsl(0, 36%, 70%);
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 10% 0;
+}
+
+.colored-heading {
+  color: hsl(0, 36%, 70%);
+  font-style: italic;
+  font-weight: 300;
+}
+
+.submit-btn {
+  background-image: url(images/incon-arrow.svg);
+}
+
+.hero-img-desktop {
+  width: 100%;
+}
+
+.hero-img-mobile {
+  display: none;
+}
+
+.glossy {
+  border: 1px solid hsl(0, 36%, 70%);
+  border-radius: 40px;
+}
+
+.email-form {
+  position: relative;
+  width: 100%;
+}
+
+.email-input {
+  width: 100%;
+  padding: 3% 6%;
+}
+
+.email-btn {
+  width: 20%;
+  position: absolute;
+  right: 1px;
+  background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  padding: 3% 6%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-left: none;
+}
+
+.email-btn:hover {
+  background-image: linear-gradient(to right, hsl(0, 36%, 70%), hsl(0, 93%, 68%));
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ---------------------------MOBILE-------------------------- */
+@media (max-width:440px) {
+  body {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-img-desktop {
+    display: none;
+  }
+
+  .logo-desktop {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: inline-block;
+    margin: 10% 50% 10% 0;
+  }
+
+  .hero-img-mobile {
+    display: block;
+    width: 100%;
+    margin: 10% 0;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .hero-img-mobile>img {
+    width: 100%;
+  }
+
+  .logo {
+    text-align: left;
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+
+  .email-form {}
+}
